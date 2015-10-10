@@ -12,8 +12,15 @@ a:focus {
 
 /* LAYOUT CSS */
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.carousel-control {
+  border-radius: 6px;
 }
 
 #main-layout {

@@ -279,3 +279,10 @@ void loop() {
 <div class='embed-container'>
   <iframe src='http://tsdb.seductiveequations.com:3000/dashboard-solo/db/meters?panelId=1&fullscreen'></iframe>
 </div>
+
+### The Answer
+<p>
+So after all that, I did end up finding out what was using all of the water.
+It turns out one of the underground drip lines in my garden had cracked over the winter and sprung a leak.
+It was using <em>just slightly</em> more water than it was supposed to, but when run for hours, it added up to be quite a lot.
+</p>

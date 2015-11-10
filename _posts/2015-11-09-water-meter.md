@@ -158,7 +158,7 @@ InfluxDB has an HTTP API, and the Photon can make HTTP requests, so I just had t
 It also conveniently interfaces extremely well with <a href="http://grafana.org/" target="_blank">Grafana</a>.
 </p>
 
-### The Code
+<h3 id="the-code">The Code <a href="https://github.com/Shadow6363/Water-Meter-Reader" target="_blank"><i class="fa fa-fw fa-github"></i></a></h3>
 {% highlight c++ %}
 #define db_host "0.0.0.0"
 #define db_port 0000

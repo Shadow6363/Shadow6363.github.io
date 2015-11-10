@@ -148,12 +148,12 @@ Okay, I might be overdoing it a little, but I was excited.
 <p>
 The Spark Core and the Photon are supposed to be interchangable so I dug out the old circuit, swapped the two chips, and uploaded the old code.
 The good people at Particle didn't lie. Things worked and I had a way to monitor the data, but I needed a way to collect and store it.
-I'd been looking into time series databases over the summer, and I was eager to try one of them out, meet <a href="https://influxdb.com/" target="_blank">InfluxDB</a>.
+I'd been looking into time series databases over the summer, and I was eager to try one of them out. Meet <a href="https://influxdb.com/" target="_blank">InfluxDB</a>.
 </p>
 
 <p>
 I figured I'd do something along the lines of having the Photon read the data, send it to some collection node with MQTT, and then store it in InfluxDB.
-The Spark Core and Photon still seem to struggle with MQTT though so I opted to instead just skip that step entirely.
+The Spark Core and Photon still seem to struggle with MQTT, though, so I instead opted to skip that step entirely.
 InfluxDB has an HTTP API, and the Photon can make HTTP requests, so I just had to combine the two, and the rest is history.
 It also conveniently interfaces extremely well with <a href="http://grafana.org/" target="_blank">Grafana</a>.
 </p>
@@ -282,7 +282,26 @@ void loop() {
 
 ### The Answer
 <p>
-So after all that, I did end up finding out what was using all of the water.
+After all that, I did end up finding out what was using all of the water.
 It turns out, one of the underground drip lines in my garden had cracked over the winter and sprung a leak.
 It was using <em>just slightly</em> more water than it was supposed to, but when run for hours every week, it added up to be quite a lot.
+</p>
+
+### The Future
+<p>
+Currently, I'm just enjoying being able to pull up the Grafana dashboard and see when I flush the toilet or take a shower.
+Sure, I kind of already know when I do those things, but now I can see their impact. Exactly how much water was used, how much it cost me, etc.
+Since InfluxDB has its own querying language, I'm also able to generate statistics like weekly usage, highest day or hour of usage, or compare how much water various settings on the washing machine use.
+It's pretty empowering and pretty cool.
+</p>
+
+<p>
+I read a paper a few years back of some researchers using fuzzy logic and an electrical meter to identify the device using power from it's "usage signature".
+Maybe instead of logging in and looking at the graphs, it could push a notification to my phone that someone has been taking a rather excessive shower or in my case, the drip system is using too much water.
+</p>
+
+<p>
+After seeing this, my brother asked me if I could do the same for his natural gas meter so that'll probably be the next project.
+I think it'd be neat to have this sort of monitor for all of our utilities.
+Who knows what sort of information could be teased out of the data then?
 </p>

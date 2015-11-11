@@ -2,7 +2,7 @@
 layout: post
 title: Live Wi-Fi Water Meter Reader
 excerpt: ""
-modified: 2015-11-09
+modified: 2015-11-11
 tags: [photon, water meter, iot]
 comments: true
 pinned: true
@@ -296,7 +296,7 @@ It's pretty empowering and pretty cool.
 </p>
 
 <p>
-I read a paper a few years back of some researchers using fuzzy logic and an electrical meter to identify the device using power from it's "usage signature".
+I read a paper a few years back of some researchers using neural networks and an electric meter to identify the device using power from it's "usage signature".
 Maybe instead of logging in and looking at the graphs, it could push a notification to my phone that someone has been taking a rather excessive shower or in my case, the drip system is using too much water.
 </p>
 

@@ -277,7 +277,7 @@ void loop() {
 }
 </style>
 <div class='embed-container'>
-  <iframe src='http://tsdb.seductiveequations.com:3000/dashboard-solo/db/meters?panelId=1&fullscreen'></iframe>
+  <iframe src='http://tsdb.seductiveequations.com:3000/dashboard/db/meters?panelId=1&fullscreen'></iframe>
 </div>
 
 ### The Answer
